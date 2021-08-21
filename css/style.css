@@ -9,7 +9,6 @@ html {
   row-gap: 15px;
 }
 .container .div1 {
-  display: grid;
   text-align: center;
   line-height: 150px;
   /* padding-top: 40px; */
@@ -23,18 +22,20 @@ html {
 
 .div2 {
   display: grid;
-  float: left;
+
   height: 400px;
 }
 .div2 > img {
   height: 200px;
+  width: 100%;
 }
 .div3 {
-  float: left;
+  /* float: left; */
   height: 400px;
 }
 .div3 > img {
   height: 200px;
+  width: 100%;
 }
 .div4 > img {
   width: 50px;
@@ -42,14 +43,14 @@ html {
   border-radius: 50%;
 }
 
-.div5 {
-  float: right;
+/* .div5 {
   height: 350px;
-}
+} */
 .div5 img {
   height: 80px;
   width: 170px;
 }
+
 .container :nth-child(2) {
   grid-area: 2/1 / span 2;
 }
@@ -57,12 +58,12 @@ html {
   grid-area: 4/1 / span 3;
 }
 .container :nth-child(4) {
-  padding: 10px;
+  padding: 0px;
 }
 
 .container :nth-child(5) {
   grid-area: 3/2 / span 2;
-  padding: 10px;
+  padding: 15px;
 }
 .container :nth-child(6) {
   grid-area: 5/2;
